@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(13, 13, 33);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  margin: auto;
+  max-width: 1250px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: rgb(25, 25, 62);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 13px 20px;
+  
+  z-index: 10;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.359);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header:hover {
+  box-shadow: 0px 0px 12px cyan;
+  transition: all 0.4s ease-in-out;
+}
+header h1 {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  filter: drop-shadow(0px 0px 4px rgb(2, 213, 213));
+}
+header h1:hover {
+  filter: drop-shadow(0px 0px 6px cyan);
+  transition: all 0.3s ease-in-out;
+}
+.header{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+ul {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 40px;
+}
+li,
+a {
+  padding: 2px;
+  cursor: pointer;
+  list-style: none;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+li:hover {
+  filter: drop-shadow(0px 0px 4px cyan);
+  border-bottom: 1px solid cyan;
+  transition: all 0.3s ease;
+  /* box-shadow: 0px 0px 4px cyan; */
 }
 
-.App-link {
-  color: #61dafb;
+.ligh_mode {
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  filter: drop-shadow(0px 0px 4px cyan);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ?Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: rgb(25, 25, 62);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+footer:hover {
+  box-shadow: 0px 0px 12px cyan;
+  transition: all 0.4s ease-in-out;
+}
+footer h1 {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  filter: drop-shadow(0px 0px 4px rgb(2, 213, 213));
+}
+footer h1:hover {
+  filter: drop-shadow(0px 0px 6px cyan);
+  transition: all 0.3s ease-in-out;
+}
+footer h3 {
+  margin-bottom: 5px;
+}
+footer div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+footer div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+footer div i{
+  font-size: 20px;
+  
+}
+footer p {
+  font-size: 14px;
+}
+
+body.darkMode {
+  background-color: rgb(54, 54, 231);
+}
+
+.darkMode footer p {
+  color: aliceblue;
+}
+.darkMode header, .darkMode footer {
+  background-color: #3288ff;
+}
+.darkMode header:hover, .darkMode footer:hover {
+  box-shadow: 0px 0px 12px #3288ff;
+  transition: all 0.2s ease-in-out;
 }

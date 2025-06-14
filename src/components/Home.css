@@ -1,0 +1,83 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(13, 13, 33);
+}
+
+.container {
+  margin: auto;
+  max-width: 1250px;
+  
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  padding-top: 80px;
+}
+
+.home_left h2,
+.home_left h3 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* filter: drop-shadow(0px 0px 1px cyan); */
+}
+.home_left h1 {
+  font-size: 60px;
+  margin-top: 5px;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.home_left p {
+  margin-top: 20px;
+  color: #ffffffc3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.home_right img {
+  border-radius: 60px;
+  width: 500px;
+  transition: all 0.3s ease;
+}
+
+.home_right img:hover {
+  transform: scale(1.02);
+}
+
+body.darkMode {
+  background-color: rgb(235, 235, 235);
+}
+
+.darkMode .hero h1,
+.darkMode .hero h2,
+.darkMode .hero h3,
+.darkMode {
+  color: black;
+}
+
+.darkMode .content h2,
+.darkMode .content h3,
+.darkMode {
+  color: black;
+}
+.darkMode .contents h1 {
+  color: black;
+  /* border-bottom: 2px solid rgb(2, 75, 148); */
+}
+.darkMode .hero p,
+.darkMode .content p {
+  color: rgb(81, 81, 81);
+}
+
+.darkMode header:hover {
+  box-shadow: 0px 0px 12px rgb(1, 47, 109);
+}

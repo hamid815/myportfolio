@@ -1,0 +1,85 @@
+.contact_me{
+    margin-top: 30px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid cyan;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mycon{
+    
+    /* gap: 50px; */
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.add_contact{
+    margin: 70px 0;
+    background-color: rgb(25, 25, 62);
+    border-radius: 10px;
+    padding: 75px 200px;
+    text-align: center;
+    
+}
+.add_contact h3{
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.add_contact input{
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    /* margin: auto; */
+    background-color: rgb(13, 13, 33);
+    color: #fff;
+    display: block;
+    font-size: 20px;
+}
+
+.add_contact input:focus{
+    filter: drop-shadow(0px 0px 4px cyan);
+}
+.add{
+    width: 200px;
+    cursor: pointer;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(13, 13, 33);
+    color: #fff;
+    margin-top: 30px;
+}
+/* body.darkMode{
+    background-color: rgb(250, 252, 255);
+}    */
+body.darkMode .add_contact {
+    /* background-color: #a4caff; */
+  background-color: #7db1fa;
+
+}
+.darkMode .contact_me{
+    border-bottom: 2px solid rgb(2, 75, 148);
+
+}
+
+.darkMode h2{
+    color: black;
+    /* border-bottom: 2px solid rgb(2, 75, 148); */
+}
+.darkMode h3{
+    color: black;
+}
+.darkMode input{
+    background-color: #ecf2f9;
+   
+}
+.darkMode .add{
+    background-color:#ecf2f9 ;
+    color: black;
+}
