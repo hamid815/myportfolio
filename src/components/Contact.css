@@ -58,6 +58,10 @@
 /* body.darkMode{
     background-color: rgb(250, 252, 255);
 }    */
+
+.status-message{
+    color: #fff;
+}
 body.darkMode .add_contact {
     /* background-color: #a4caff; */
   background-color: #7db1fa;
@@ -82,4 +86,64 @@ body.darkMode .add_contact {
 .darkMode .add{
     background-color:#ecf2f9 ;
     color: black;
+}
+
+@media (max-width: 1024px) {
+  .add_contact {
+    padding: 60px 100px;
+  }
+
+  .add_contact input {
+    font-size: 18px;
+  }
+
+  .add {
+    width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .add_contact {
+    padding: 40px 30px;
+  }
+
+  .add_contact h3 {
+    font-size: 18px;
+  }
+
+  .add_contact input {
+    font-size: 16px;
+  }
+
+  .add {
+    width: 160px;
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add_contact {
+    padding: 30px 15px;
+  }
+
+  .contact_me {
+    font-size: 22px;
+  }
+
+  .add_contact h3 {
+    font-size: 16px;
+  }
+
+  .add_contact input {
+    font-size: 15px;
+    padding: 8px 15px;
+  }
+
+  .add {
+    width: 140px;
+    font-size: 12px;
+    padding: 7px 8px;
+  }
 }

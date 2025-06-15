@@ -5,6 +5,7 @@ const Contact = ({ contactState }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [statusMessage, setStatusMessage] = useState(""); // ✅ yangi status
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,38 +15,34 @@ const Contact = ({ contactState }) => {
 👤 Ism: ${name}
 📞 Telefon: ${phone}
 📧 Email: ${email}
-        `;
+    `;
 
-    // Siz yaratgan botning tokeni va chat ID
     const BOT_TOKEN = "7571951013:AAEarY5fvcEyS_eBBBITnOuz2Yn22tmlf38"; // Bu yerga sizning bot tokeningizni qo'ying
-    const CHAT_ID = "@hamidjon815"; // Bu yerga sizning chat ID yoki kanal nomini qo'ying
+    const CHAT_ID = "5704255218"; // Bu yerga sizning chat ID yoki kanal nomini qo'ying
 
     try {
       await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           chat_id: CHAT_ID,
           text: message,
         }),
       });
 
-      alert("Ma'lumotlar yuborildi!");
+      setStatusMessage("✅ Ma'lumotlar yuborildi!");
       setName("");
       setPhone("");
       setEmail("");
     } catch (error) {
       console.error("Telegramga yuborishda xatolik:", error);
-      alert("Yuborishda xatolik yuz berdi.");
+      setStatusMessage("❌ Yuborishda xatolik yuz berdi.");
     }
   };
 
   return (
     <div className="mycon">
       <div className="container">
-        {/* <div className="mycon"></div> */}
         <h2 className="contact_me">{contactState[0].title}</h2>
         <form className="add_contact" onSubmit={handleSubmit}>
           <h3>{contactState[0].description}</h3>
@@ -58,7 +55,6 @@ const Contact = ({ contactState }) => {
             onChange={(e) => setName(e.target.value)}
             required
           />
-
           <input
             className="inp"
             type="tel"
@@ -67,7 +63,6 @@ const Contact = ({ contactState }) => {
             onChange={(e) => setPhone(e.target.value)}
             required
           />
-
           <input
             className="inp"
             type="email"
@@ -76,6 +71,11 @@ const Contact = ({ contactState }) => {
             onChange={(e) => setEmail(e.target.value)}
             required
           />
+
+          {/* 🟡 Shu yerga xabar chiqariladi */}
+          {statusMessage && (
+            <p className="status-message">{statusMessage}</p>
+          )}
 
           <button className="add" type="submit">
             Add contact

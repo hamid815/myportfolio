@@ -81,3 +81,68 @@ body.darkMode {
 .darkMode header:hover {
   box-shadow: 0px 0px 12px rgb(1, 47, 109);
 }
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .home_right img {
+    width: 350px;
+  }
+  .hero{
+    gap: 30px;
+  }
+  .home_left h1{
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 60px;
+  }
+
+  .home_left {
+    width: 100%;
+  }
+
+  .home_left h1 {
+    font-size: 50px;
+  }
+
+  .home_left h2,
+  .home_left h3 {
+    font-size: 28px;
+  }
+
+  .home_left p {
+    font-size: 16px;
+  }
+
+  .home_right img {
+    /* width: 100%; */
+    max-width: 400px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home_left h1 {
+    font-size: 36px;
+  }
+
+  .home_left h2,
+  .home_left h3 {
+    font-size: 20px;
+  }
+
+  .home_left p {
+    font-size: 12px;
+  }
+
+  .home_right img {
+    max-width: 300px;
+  }
+}

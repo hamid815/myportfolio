@@ -80,6 +80,35 @@ li:hover {
   filter: drop-shadow(0px 0px 4px cyan);
 }
 
+ .navi{
+    position: fixed;
+    right: -36px;
+    width: 40px;
+    height: 100px;
+    top: 17%;
+    background-color: rgb(0, 255, 251);
+    text-align: center;
+    padding: 10px 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .navi:hover{
+    transition: all .3s ease-in-out;
+    right: 0;
+    background-color: rgb(25, 25, 62);
+  }
+  .navi:active{
+    transition: all .3s ease-in-out;
+    right: 0;
+    background-color: rgb(25, 25, 62);
+  }
+  .darkMode .navi:hover{
+    background-color: #3288ff;
+  }
+  .darkMode .navi:active{
+    background-color: #3288ff;
+  }
+
 /* ?Footer */
 footer {
   margin-top: 40px;
@@ -148,4 +177,63 @@ body.darkMode {
 .darkMode header:hover, .darkMode footer:hover {
   box-shadow: 0px 0px 12px #3288ff;
   transition: all 0.2s ease-in-out;
+}
+
+@media(max-width:700px){
+  header ul{
+    gap: 20px;
+  }
+  header ul li{
+    width: 50px;
+     /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  }
+
+  footer div{
+    display: block;
+  }
+  footer{
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  footer h1{
+    font-size:25px;
+  }
+  
+}
+@media(max-width: 570px) {
+  header h1{
+    font-size: 25px;
+  }
+
+  header ul li {
+    width: 40px;
+     /* white-space: nowrap; */
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  }
+  .ligh_mode {
+    padding: 5px ;
+    font-size: 12px;
+  }
+  footer {
+    margin-top: 0px;
+  }
+  footer div a{
+    display: none;
+  }
+ 
+  
+}
+@media(max-width: 450px) {
+  header ul {
+    gap: 10px;
+  }
+  header ul li {
+    width: 20px;
+     /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  }
 }

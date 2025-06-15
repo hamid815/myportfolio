@@ -117,6 +117,19 @@ function App() {
           </div>
         </header>
 
+        <div className="navi">
+          <a href="https://www.instagram.com/_hamidjon._/">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="https://t.me/hamidjon815">
+            <i class='bx bxl-telegram'></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61576214425419&locale=ru_RU">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          
+        </div>
+
         <div ref={homeRef}>
           <Home homeState={homeState} />
         </div>
@@ -141,8 +154,8 @@ function App() {
             <i class='bx bxl-telegram'></i>
             Telegram
           </a>
-          <p>All rights reserved &copy; 2025</p>
         </div>
+          <p>All rights reserved &copy; 2025</p>
       </footer>
     </div>
   );

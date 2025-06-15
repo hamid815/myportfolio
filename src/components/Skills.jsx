@@ -19,8 +19,10 @@ const Skills = ({skillsState}) => {
       <div className="my_skills">
         {/* FRONTEND */}
         <div className="skill-card">
-          <h2>{skillsState[0].frontend}</h2>
+          <div className='skill-flex'>
           <i className='bx bx-minus-front as'></i>
+          <h2>{skillsState[0].frontend}</h2>
+          </div>
           <button onClick={() => toggleSkill('frontend')}>
             {activeSkill === 'frontend' ? 'Yopish' : 'Learn More'}
           </button>
@@ -36,8 +38,10 @@ const Skills = ({skillsState}) => {
 
         {/* C++ */}
         <div className="skill-card">
-          <h2>{skillsState[0].cpp}</h2>
+          <div className='skill-flex'>
           <i className='bx bxl-c-plus-plus as'></i>
+          <h2>{skillsState[0].cpp}</h2>
+          </div>
           <button onClick={() => toggleSkill('cpp')}>
             {activeSkill === 'cpp' ? 'Yopish' : 'Learn More'}
           </button>
@@ -52,8 +56,10 @@ const Skills = ({skillsState}) => {
 
         {/* Html & CSS */}
         <div className="skill-card">
-          <h2>{skillsState[0].htmlCss}</h2>
+          <div className='skill-flex'>
           <i className='bx bx-code as'></i>
+          <h2>{skillsState[0].htmlCss}</h2>
+          </div>
           <button onClick={() => toggleSkill('htmlcss')}>
             {activeSkill === 'htmlcss' ? 'Yopish' : 'Learn More'}
           </button>
@@ -68,8 +74,10 @@ const Skills = ({skillsState}) => {
 
         {/* PROJECTS */}
         <div className="skill-card">
-          <h2>About my Projects</h2>
+          <div className='skill-flex'>
           <i className='bx bx-line-chart as'></i>
+          <h2>About my Projects</h2>
+          </div>
           <button onClick={() => toggleSkill('project')}>
             {activeSkill === 'project' ? 'Yopish' : 'Learn More'}
           </button>

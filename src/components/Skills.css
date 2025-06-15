@@ -163,8 +163,100 @@ body {
 }
 
 /* Responsive */
+
+@media (max-width: 1100px) {
+  .skill-info p{
+    font-size: 16px;
+  }
+  .skill-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+
+
 @media (max-width: 768px) {
   .my_skills {
     grid-template-columns: 1fr;
   }
+  .my_skil {
+    font-size: 24px;
+    padding-top: 0px;
+    margin-top: 70px;
+  }
+
+  .skill-card h2 {
+    font-size: 20px;
+  }
+
+  .skill-card button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .skill-info p {
+    font-size: 14px;
+  }
+
+  .myProjects h2 {
+    font-size: 24px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .projects img {
+    max-width: 100%;
+  }
+
+  .projects h3 {
+    font-size: 18px;
+    text-align: start;
+  }
+
+  .projects > div {
+    padding: 15px;
+  }
+
+  .skill-flex {
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+  }
 }
+
+@media (max-width: 480px) {
+  .my_skil {
+    font-size: 20px;
+  }
+
+  .skill-card h2 {
+    font-size: 18px;
+  }
+
+  .skill-info p {
+    font-size: 13px;
+  }
+
+  .projects h3 {
+    font-size: 16px;
+  }
+
+  .projects > div {
+    padding: 10px;
+  }
+
+  .skill-card {
+    padding: 20px;
+  }
+
+  .skill-card i {
+    font-size: 30px;
+  }
+}
+

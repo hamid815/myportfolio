@@ -112,3 +112,82 @@ body {
 .darkMode header:hover {
   box-shadow: 0px 0px 12px rgb(1, 47, 109);
 }
+
+
+/* Responsive Styling */
+@media (max-width: 1100px) {
+  .content_left img {
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+    padding-top: 20px;
+    margin-top: 30px;
+  }
+
+  .content_left,
+  .content_right {
+    width: 100%;
+    
+  }
+
+  .content_left img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 30px;
+  }
+
+  .content_right h3,
+  .content_left h3 {
+    font-size: 32px;
+  }
+
+  .content_right h4,
+  .content_left h4 {
+    font-size: 20px;
+  }
+
+  .content_right p {
+    font-size: 14px;
+  }
+
+  .content_about h2 {
+    font-size: 16px;
+  }
+
+  .cv {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content_left img {
+    max-width: 250px;
+  }
+
+  .content_right h3 {
+    font-size: 26px;
+  }
+
+  .content_right h4 {
+    font-size: 18px;
+  }
+
+  .content_right p,
+  .content_about h2 {
+    font-size: 13px;
+  }
+
+  .cv {
+    font-size: 13px;
+    padding: 7px 14px;
+    margin: 10px;
+  }
+}
