@@ -169,7 +169,7 @@ body {
 
 @media (max-width: 480px) {
   .content_left img {
-    max-width: 250px;
+    max-width: 300px;
   }
 
   .content_right h3 {

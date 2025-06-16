@@ -18,7 +18,7 @@ const Skills = ({skillsState}) => {
 
       <div className="my_skills">
         {/* FRONTEND */}
-        <div className="skill-card">
+        <div className="skill-card" data-aos="zoom-in">
           <div className='skill-flex'>
           <i className='bx bx-minus-front as'></i>
           <h2>{skillsState[0].frontend}</h2>
@@ -37,7 +37,7 @@ const Skills = ({skillsState}) => {
         </div>
 
         {/* C++ */}
-        <div className="skill-card">
+        <div className="skill-card" data-aos="zoom-in">
           <div className='skill-flex'>
           <i className='bx bxl-c-plus-plus as'></i>
           <h2>{skillsState[0].cpp}</h2>
@@ -55,7 +55,7 @@ const Skills = ({skillsState}) => {
         </div>
 
         {/* Html & CSS */}
-        <div className="skill-card">
+        <div className="skill-card" data-aos="zoom-in">
           <div className='skill-flex'>
           <i className='bx bx-code as'></i>
           <h2>{skillsState[0].htmlCss}</h2>
@@ -73,7 +73,7 @@ const Skills = ({skillsState}) => {
         </div>
 
         {/* PROJECTS */}
-        <div className="skill-card">
+        <div className="skill-card" data-aos="zoom-in">
           <div className='skill-flex'>
           <i className='bx bx-line-chart as'></i>
           <h2>About my Projects</h2>
@@ -91,31 +91,31 @@ const Skills = ({skillsState}) => {
         </div>
       </div>
 
-      <div className='myProjects'>
+      <div className='myProjects' data-aos="zoom-in">
         <h2>My Projects</h2>
         <div className='projects'>
-          <div className='instagram'>
+          <div className='instagram' data-aos="zoom-in">
             <h3>Instagram</h3>
             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
               <img src={Instargram} alt="" />
             </a>
           </div>
 
-          <div className='facebook'>
+          <div className='facebook' data-aos="zoom-in">
             <h3>Facebook</h3>
             <a href="https://www.facebook.com/?locale=ru_RU" target="_blank" rel="noopener noreferrer">
               <img src={Facebook} alt="" />
             </a>
           </div>
 
-          <div className='myPortfolio'>
+          <div className='myPortfolio' data-aos="zoom-in">
             <h3>My Portfolio</h3>
             <a href="Home" target="_blank" rel="noopener noreferrer">
               <img src={MyPortfolio} alt="" />
             </a>
           </div>
 
-          <div className='alexp'>
+          <div className='alexp' data-aos="zoom-in">
             <h3>Alex Portfolio</h3>
             <a href="https://www.aleksefo.com/" target="_blank" rel="noopener noreferrer">
               <img src={Alexp} alt="" />

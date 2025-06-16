@@ -9,7 +9,7 @@ const About = ({ aboutState }) => {
         <h2 className="bor">{aboutState[0].title}</h2>
 
         <div className="content">
-          <div className="content_left" data-aos="slide-right">
+          <div className="content_left">
             <img src={Me} alt="Me" />
             <div>
               <h3>{aboutState[0].socialLinks.instagram}</h3>
@@ -17,7 +17,7 @@ const About = ({ aboutState }) => {
             </div>
           </div>
 
-          <div className="content_right" data-aos="slide-left">
+          <div className="content_right">
             <h3>I'm Frontend developer</h3>
             <h4>And I'm Junior</h4>
             <p>{aboutState[0].description}</p>

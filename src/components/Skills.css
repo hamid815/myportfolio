@@ -84,17 +84,17 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  align-items: start; /* <--- Qo‘shing */
+  align-items: start; 
 }
 .skill-card {
-  height: auto; /* muhim: balandlikni avtomatik qilsin */
+  height: auto; 
 }
 
 .myProjects{
   margin-top: 50px;
   /* background-color:rgba(0, 255, 255, 0.1) ; */
   background-color: rgb(25, 25, 62);
-  padding: 25px 30px;
+  padding: 5px 15px;
   border-radius: 10px;
 }
 .myProjects h2{
@@ -132,7 +132,10 @@ body {
   background-color: rgb(13, 13, 33);
   border-radius: 10px;
 }
-
+.darkMode .my_skil{
+  color: #000000;
+  border-bottom: 2px solid #000253;
+}
 .darkMode .skill-card {
   background-color: #7db1fa;
 }
@@ -257,6 +260,9 @@ body {
 
   .skill-card i {
     font-size: 30px;
+  }
+  .container{
+    padding:  10px;
   }
 }
 
