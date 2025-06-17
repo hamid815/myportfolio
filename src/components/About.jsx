@@ -36,6 +36,49 @@ const About = ({ aboutState }) => {
             </a>
           </div>
         </div>
+
+        <div className="mySkills">
+          <div className="mySkill">
+            <div className="mySkillname">
+              HTML <span className="percentage">95%</span>
+            </div>
+            
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "95%" }}></div>
+            </div>
+          </div>
+
+          <div className="mySkill">
+            <div className="mySkillname">
+              CSS <span className="percentage">90%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "90%" }}></div>
+            </div>
+          </div>
+
+          
+
+          <div className="mySkill">
+            <div className="mySkillname">
+              JavaScript <span className="percentage">80%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "80%" }}></div>
+            </div>
+          </div>
+
+
+          <div className="mySkill">
+            <div className="mySkillname">
+              React <span className="percentage">85%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "85%" }}></div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );
