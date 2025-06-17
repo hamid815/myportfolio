@@ -145,6 +145,18 @@ body {
 .darkMode header:hover {
   box-shadow: 0px 0px 12px rgb(1, 47, 109);
 }
+.darkMode .mySkillname{
+  color: #0c0038;
+}
+.darkMode .progress_bar {
+  background-color: #e0e0e0;
+}
+.darkMode .progress {
+  background-color: rgb(3, 110, 218);
+}
+.darkMode .percentage {
+  color: rgb(45, 45, 45);
+}
 
 /* Responsive Styling */
 @media (max-width: 1100px) {
