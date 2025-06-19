@@ -103,7 +103,7 @@ const Skills = ({ skillsState }) => {
           <div className="facebook" data-aos="zoom-in">
             <h3>Facebook</h3>
             <a
-              href="https://www.facebook.com/?locale=ru_RU"
+              href="https://facebook-nu-roan.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >

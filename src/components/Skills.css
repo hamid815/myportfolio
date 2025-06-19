@@ -132,6 +132,10 @@ body {
   background-color: rgb(13, 13, 33);
   border-radius: 10px;
 }
+.projects i{
+  margin-top: 10px;
+  font-size: 25px;
+}
 .darkMode .my_skil{
   color: #000000;
   border-bottom: 2px solid #000253;
