@@ -78,6 +78,24 @@ const About = ({ aboutState }) => {
             </div>
           </div>
 
+          <div className="mySkill">
+            <div className="mySkillname">
+              SAS <span className="percentage">80%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "85%" }}></div>
+            </div>
+          </div>
+
+          <div className="mySkill">
+            <div className="mySkillname">
+              Bootsrap <span className="percentage">80%</span>
+            </div>
+            <div className="progress-bar">
+              <div className="progress" style={{ width: "75%" }}></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
