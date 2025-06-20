@@ -111,8 +111,8 @@ function App() {
                 Contact
               </li>
             </ul>
-            <button onClick={handleButtonClick} className="ligh_mode">
-              Light Mode
+            <button onClick={() => setIsWhiteBackground(!isWhiteBackground)} className="ligh_mode">
+              {isWhiteBackground ? "🌙 Dark mode" : "☀️ Light mode"}
             </button>
           </div>
         </header>

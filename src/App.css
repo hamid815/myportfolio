@@ -96,18 +96,21 @@ li:hover {
   .navi:hover{
     transition: all .3s ease-in-out;
     right: 0;
-    background-color: rgb(25, 25, 62);
+    background-color: rgba(25, 25, 62, 0);
   }
   .navi:active{
     transition: all .3s ease-in-out;
     right: 0;
-    background-color: rgb(25, 25, 62);
+    background-color: rgba(25, 25, 62, 0);
+  }
+  .darkMode .navi i{
+    color: #3288ff;
   }
   .darkMode .navi:hover{
-    background-color: #3288ff;
+    background-color: #3287ff00;
   }
   .darkMode .navi:active{
-    background-color: #3288ff;
+    background-color: #3287ff00;
   }
 
 /* ?Footer */
