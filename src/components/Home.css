@@ -6,9 +6,9 @@ html{
   margin: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   background-color: rgb(13, 13, 33);
-}
+} */
 
 .container {
   margin: auto;
@@ -45,9 +45,10 @@ body {
 
 .home_right img {
   border-radius: 60px;
-  width: 500px;
+  width: 430px;
   transition: all 0.3s ease;
 }
+
 
 .home_right img:hover {
   transform: scale(1.02);

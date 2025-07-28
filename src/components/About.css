@@ -3,9 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   background-color: rgb(13, 13, 33);
-}
+} */
 
 .container {
   margin: auto;
@@ -54,7 +54,7 @@ body {
 }
 .content_right h4,
 .content_left h4 {
-  font-size: 27px;
+  font-size:43px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
 }
@@ -193,7 +193,7 @@ body {
 
   .content_right h4,
   .content_left h4 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .content_right p {
@@ -224,7 +224,7 @@ body {
   }
 
   .content_right h4 {
-    font-size: 18px;
+    font-size: 26px;
   }
 
   .content_right p,

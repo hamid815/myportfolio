@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: rgb(13, 13, 33);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: rgb(13, 13, 33); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -77,66 +77,82 @@ body {
   animation: fadeIn 0.4s ease;
   color: #ccc;
 }
-.skill-info p{
+.skill-info p {
   font-size: 20px;
 }
 .my_skills {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  align-items: start; 
+  align-items: start;
 }
 .skill-card {
-  height: auto; 
+  height: auto;
 }
 
-.myProjects{
+.myProjects {
   margin-top: 50px;
   /* background-color:rgba(0, 255, 255, 0.1) ; */
   background-color: rgb(25, 25, 62);
-  padding: 5px 15px;
+  padding: 50px 20px;
   border-radius: 10px;
 }
-.myProjects h2{
+.myProjects h2 {
   text-align: center;
   color: #fff;
   font-size: 30px;
   padding-bottom: 10px;
   /* border-bottom: 1px solid cyan; */
 }
-.projects{
+.projects {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 50px;
-  margin-top: 60px;
+  gap: 40px;
+  margin-top: 40px;
 }
-.projects img{
+.projects img {
   width: 100%;
   border-radius: 10px;
   cursor: pointer;
 }
-.projects img:hover{
+.projects img:hover {
   filter: drop-shadow(0px 0px 15px cyan);
   transition: all 0.3s ease;
   transform: scale(1.02);
-   filter: brightness(0.7);
+  filter: brightness(0.7);
 }
-.projects h3{
+.projects h3 {
   color: #fff;
   font-size: 20px;
   padding-bottom: 20px;
 }
-.projects>div{
+.projects > div {
   padding: 20px;
   /* background-color: rgb(0, 0, 0); */
   background-color: rgb(13, 13, 33);
   border-radius: 10px;
 }
-.projects i{
+.projects i {
   margin-top: 10px;
   font-size: 25px;
 }
-.darkMode .my_skil{
+.showMore {
+  margin-top: 30px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: cyan;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  
+}
+.showMore:hover{
+  background-color: #00e1ff;
+
+}
+.darkMode .my_skil {
   color: #000000;
   border-bottom: 2px solid #000253;
 }
@@ -147,13 +163,23 @@ body {
   background-color: rgb(13, 13, 33);
   color: rgb(255, 255, 255);
 }
+.darkMode .showMore{
+  background-color: rgb(13, 13, 33);
+  color: rgb(255, 255, 255);
+}
 .darkMode .myProjects {
   background-color: #7db1fa;
 }
-.darkMode .projects>div{
+.darkMode .projects > div {
   background-color: #3288ff;
 }
-.darkMode .skill-card i{
+.darkMode .skill-card i {
+  color: #000253;
+}
+.darkMode .skill-info {
+  background-color: #ffffff;
+}
+.darkMode .skill-info p {
   color: #000253;
 }
 
@@ -172,17 +198,15 @@ body {
 /* Responsive */
 
 @media (max-width: 1100px) {
-  .skill-info p{
+  .skill-info p {
     font-size: 16px;
   }
-  .skill-flex{
+  .skill-flex {
     display: flex;
     align-items: center;
     gap: 10px;
   }
 }
-
-
 
 @media (max-width: 768px) {
   .my_skills {
@@ -265,8 +289,7 @@ body {
   .skill-card i {
     font-size: 30px;
   }
-  .container{
-    padding:  10px;
+  .container {
+    padding: 10px;
   }
 }
-

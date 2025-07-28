@@ -2,6 +2,8 @@ import React from "react";
 import "./Home.css";
 import Me from "../assest/me1.png";
 
+
+
 const Home = ({ homeState }) => {
   return (
     <div className="container">
@@ -18,6 +20,7 @@ const Home = ({ homeState }) => {
         </div>
         <div className="home_right">
           <img src={Me} alt="Profile" />
+          
         </div>
       </div>
     </div>

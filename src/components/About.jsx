@@ -18,8 +18,8 @@ const About = ({ aboutState }) => {
           </div>
 
           <div className="content_right">
-            <h3>I'm Frontend developer</h3>
-            <h4>And I'm Junior</h4>
+            <h4>I’m a junior frontend developer.</h4>
+            {/* <h4>And I'm Junior</h4> */}
             <p>{aboutState[0].description}</p>
 
             {aboutState.map((abouts) => (

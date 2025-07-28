@@ -30,7 +30,7 @@ const Contact = ({ contactState }) => {
         }),
       });
 
-      setStatusMessage("✅ Ma'lumotlar yuborildi!");
+      setStatusMessage("✅ Ma'lumotlar yuborildi! Tez orada siz bilan bog'lanamiz.");
       setName("");
       setPhone("");
       setEmail("");
@@ -72,13 +72,13 @@ const Contact = ({ contactState }) => {
             required
           />
 
-          {/* 🟡 Shu yerga xabar chiqariladi */}
+          
           {statusMessage && (
             <p className="status-message">{statusMessage}</p>
           )}
 
           <button className="add" type="submit">
-            Add contact
+            Add Contact
           </button>
         </form>
       </div>

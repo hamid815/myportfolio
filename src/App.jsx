@@ -7,6 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import "boxicons/css/boxicons.min.css";
+import { style } from "framer-motion/client";
 
 
 
@@ -54,7 +55,7 @@ function App() {
       name: "Shukurillayev Hamid",
       role: "Frontend Developer",
       description:
-        "I am a frontend developer and have turned my passion for web technologies into my professional career. My daily work involves creating websites based on HTML, CSS, and JavaScript and developing intuitive interfaces for users.",
+        "I started with simple HTML and CSS pages, and over time turned that curiosity into real-world projects using JavaScript and React. I love turning ideas into things people can actually use on the web.",
     },
   ]);
 
@@ -62,7 +63,7 @@ function App() {
     {
       title: "About Me",
       description:
-        "I have been taking a frontend programming course for 1 years. So far, I have learned to create a website using HTML, CSS, JavaScript +REACT. I will not only be limited to this knowledge, but also become an excellent programmer in this field.",
+        "After a year of consistent learning and practice, I’ve gained a solid understanding of HTML, CSS, JavaScript, and React. My goal? To become the kind of developer who not only builds — but solves real problems with code.",
       socialLinks: {
         instagram: "@_hamidjon._",
         facebook: "#hamidjon_shukurillayev",
@@ -75,9 +76,9 @@ function App() {
   const [skillsState, setSkillsState] = useState([
     {
       title: "My Skills",
-      frontend: "I'm Frontend Developer",
-      cpp: "About my beginner C++ course",
-      htmlCss: "About my HTML and CSS skills",
+      frontend: "Frontend Developer",
+      cpp: "C# (Beginner Level)",
+      htmlCss: "HTML & CSS",
     },
   ]);
 
@@ -112,7 +113,7 @@ function App() {
               </li>
             </ul>
             <button onClick={() => setIsWhiteBackground(!isWhiteBackground)} className="ligh_mode">
-              {isWhiteBackground ? "🌙 Dark mode" : "☀️ Light mode"}
+              {isWhiteBackground ? <i class='bx bxs-moon'></i> : <i class='bx bxs-sun' ></i>}
             </button>
           </div>
         </header>
