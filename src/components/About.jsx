@@ -92,7 +92,7 @@ const About = ({ aboutState }) => {
               Bootsrap <span className="percentage">80%</span>
             </div>
             <div className="progress-bar">
-              <div className="progress" style={{ width: "75%" }}></div>
+              <div className="progress" style={{ width: "80%" }}></div>
             </div>
           </div>
 

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Skills.css";
 import Instargram from "../assest/Insatgram.png";
 import Facebook from "../assest/Facebook.png";
-import MyPortfolio from "../assest/Myportfolio.png";
+import MyPortfolio from "../assest/NiceAdmin.png";
 import Alexp from "../assest/uzumscr.png";
 import Game from "../assest/game.png";
 import Alexpo from "../assest/Alexp.png";
@@ -43,7 +43,7 @@ const Skills = ({ skillsState }) => {
         {/* Html & CSS */}
         <div className="skill-card" data-aos="zoom-in">
           <div className="skill-flex">
-            <i class='bx bx-code-alt'></i>
+            <i class="bx bx-code-alt"></i>
             <h2>{skillsState[0].htmlCss}</h2>
           </div>
           <button onClick={() => toggleSkill("htmlcss")}>
@@ -102,8 +102,6 @@ const Skills = ({ skillsState }) => {
       <div className="myProjects" data-aos="zoom-in">
         <h2>My Projects</h2>
         <div className="projects">
-          
-
           <div className="uyin" data-aos="zoom-in">
             <h3>Alex Portfolio</h3>
             <a
@@ -175,7 +173,7 @@ const Skills = ({ skillsState }) => {
                 <i class="bx bxl-netlify"></i>
               </a>
             </div>
-            <div className="facebook" data-aos="zoom-in">
+            {/* <div className="facebook" data-aos="zoom-in">
             <h3>Facebook</h3>
             <a
               href="https://facebook-nu-roan.vercel.app/"
@@ -194,9 +192,9 @@ const Skills = ({ skillsState }) => {
             >
               <i class="bx bxl-netlify"></i>
             </a>
-          </div>
+          </div> */}
 
-          <div className="instagram" data-aos="zoom-in">
+            {/* <div className="instagram" data-aos="zoom-in">
             <h3>Instagram</h3>
             <a
               href="https://insta-eta-ten.vercel.app/"
@@ -215,21 +213,25 @@ const Skills = ({ skillsState }) => {
             >
               <i class="bx bxl-netlify"></i>
             </a>
-          </div>
+          </div> */}
             <div className="myPortfolio" data-aos="zoom-in">
-              <h3>My Portfolio</h3>
-              <a href="Home" target="_blank" rel="noopener noreferrer">
+              <h3>NiceAdmin</h3>
+              <a
+                href="https://niceadmin-project.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={MyPortfolio} alt="" />
               </a>
               <a
-                href="https://github.com/hamid815/myportfolio"
+                href="https://github.com/hamid815/niceadmin-project"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i class="bx bxl-github"></i>
               </a>
               <a
-                href="https://myportfolio-self-six.vercel.app/"
+                href="https://niceadmin-project.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
