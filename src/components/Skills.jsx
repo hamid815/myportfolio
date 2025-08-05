@@ -113,7 +113,8 @@ const Skills = ({ skillsState }) => {
               <img src={Alexpo} alt="" />
             </a>
             <a href="https://github.com/hamid815/new">
-              <i className="bx bxl-github"></i>
+              <abbr title="Open GitHub Repository"> <i className="bx bxl-github"></i></abbr>
+             
             </a>
            
           </div>
@@ -128,7 +129,7 @@ const Skills = ({ skillsState }) => {
               <img src={Alexp} alt="" />
             </a>
             <a href="https://github.com/hamid815/marketUzum">
-              <i class="bx bxl-github"></i>
+              <abbr title="Open GitHub Repository"> <i className="bx bxl-github"></i></abbr>
             </a>
            
           </div>
@@ -152,7 +153,7 @@ const Skills = ({ skillsState }) => {
                 <img src={Game} alt="" />
               </a>
               <a href="https://github.com/hamid815/game">
-                <i class="bx bxl-github"></i>
+                <abbr title="OpenGitHub Repository"> <i className="bx bxl-github"></i></abbr>
               </a>
              
             </div>
@@ -171,7 +172,7 @@ const Skills = ({ skillsState }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="bx bxl-github"></i>
+                <abbr title=" Open GitHub Repository"> <i className="bx bxl-github"></i></abbr>
               </a>
              
             </div>

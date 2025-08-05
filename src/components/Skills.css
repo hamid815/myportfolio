@@ -94,7 +94,7 @@ body {
   margin-top: 50px;
   /* background-color:rgba(0, 255, 255, 0.1) ; */
   background-color: rgb(25, 25, 62);
-  padding: 50px 20px;
+  padding: 50px 20px 20px 20px;
   border-radius: 10px;
 }
 .myProjects h2 {
@@ -132,28 +132,25 @@ body {
   /* background-color: rgb(0, 0, 0); */
   background-color: rgb(13, 13, 33);
   border-radius: 10px;
+}
+.projects>div>img{
   position: relative;
+
 }
 .AlexPortfolio i{
   position: absolute;
   bottom: 50px;
   right: 20px;
-  font-size: 25px;
+  font-size: 30px;
 }
-.UzumMarket i,.Game i{
+.UzumMarket i,.Game i,.NiceAdmin i{
   position: absolute;
   bottom: 50px;
   right: 20px;
-  font-size: 25px;
+  font-size: 30px;
   color:rgb(13, 13, 33) ;
 }
-.NiceAdmin i{
-  position: absolute;
-  bottom: 70px;
-  right: 20px;
-  font-size: 25px;
-  color:rgb(13, 13, 33) ;
-}
+
 
 
 /* .projects i {
@@ -238,6 +235,7 @@ body {
   .NiceAdmin i{
     bottom: 65px;
   }
+  
 }
 
 @media (max-width: 768px) {
@@ -286,20 +284,26 @@ body {
     padding: 15px;
   }
 
-  .NiceAdmin i{
-   
-    bottom: 50px;
-    
-
-  }
   .skill-flex {
     flex-direction: column;
     align-items: start;
     text-align: start;
   }
+  .projects i {
+    bottom: 50px;
+    right: 15px;
+    font-size: 27px;
+    
+  }
 }
 
 @media (max-width: 480px) {
+   .projects i {
+    bottom: 40px;
+    right: 10px;
+    font-size: 25px;
+    
+  }
   .my_skil {
     font-size: 20px;
   }
