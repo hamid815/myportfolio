@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import "./Skills.css";
-import Instargram from "../assest/Insatgram.png";
-import Facebook from "../assest/Facebook.png";
+
+
 import MyPortfolio from "../assest/NiceAdmin.png";
 import Alexp from "../assest/uzumscr.png";
 import Game from "../assest/game.png";
 import Alexpo from "../assest/Alexp.png";
-import { div } from "framer-motion/client";
+import { motion } from "framer-motion";
+
 
 const Skills = ({ skillsState }) => {
   const [activeSkill, setActiveSkill] = useState(null);
@@ -43,7 +44,7 @@ const Skills = ({ skillsState }) => {
         {/* Html & CSS */}
         <div className="skill-card" data-aos="zoom-in">
           <div className="skill-flex">
-            <i class="bx bx-code-alt"></i>
+            <i className="bx bx-code-alt"></i>
             <h2>{skillsState[0].htmlCss}</h2>
           </div>
           <button onClick={() => toggleSkill("htmlcss")}>
@@ -102,7 +103,7 @@ const Skills = ({ skillsState }) => {
       <div className="myProjects" data-aos="zoom-in">
         <h2>My Projects</h2>
         <div className="projects">
-          <div className="uyin" data-aos="zoom-in">
+          <div className="AlexPortfolio" data-aos="zoom-in">
             <h3>Alex Portfolio</h3>
             <a
               href="https://new-two-peach.vercel.app/#home"
@@ -112,18 +113,12 @@ const Skills = ({ skillsState }) => {
               <img src={Alexpo} alt="" />
             </a>
             <a href="https://github.com/hamid815/new">
-              <i class="bx bxl-github"></i>
+              <i className="bx bxl-github"></i>
             </a>
-            <a
-              href="https://new-two-peach.vercel.app/#home"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="bx bxl-netlify"></i>
-            </a>
+           
           </div>
 
-          <div className="uzumm" data-aos="zoom-in">
+          <div className="UzumMarket" data-aos="zoom-in">
             <h3>Uzum market</h3>
             <a
               href="https://market-uzum.vercel.app/"
@@ -135,13 +130,7 @@ const Skills = ({ skillsState }) => {
             <a href="https://github.com/hamid815/marketUzum">
               <i class="bx bxl-github"></i>
             </a>
-            <a
-              href="https://market-uzum.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="bx bxl-netlify"></i>
-            </a>
+           
           </div>
         </div>
 
@@ -153,7 +142,7 @@ const Skills = ({ skillsState }) => {
 
         {showMore && (
           <div className="projects">
-            <div className="uyin" data-aos="zoom-in">
+            <div className="Game" data-aos="zoom-in">
               <h3>Game</h3>
               <a
                 href="https://vercel.com/hamids-projects-6499ec0d/game-rl5t"
@@ -165,56 +154,10 @@ const Skills = ({ skillsState }) => {
               <a href="https://github.com/hamid815/game">
                 <i class="bx bxl-github"></i>
               </a>
-              <a
-                href="https://vercel.com/hamids-projects-6499ec0d/game-rl5t"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bx bxl-netlify"></i>
-              </a>
+             
             </div>
-            {/* <div className="facebook" data-aos="zoom-in">
-            <h3>Facebook</h3>
-            <a
-              href="https://facebook-nu-roan.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Facebook} alt="" />
-            </a>
-            <a href="https://github.com/hamid815/facebook">
-              <i class="bx bxl-github"></i>
-            </a>
-            <a
-              href="https://facebook-nu-roan.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="bx bxl-netlify"></i>
-            </a>
-          </div> */}
 
-            {/* <div className="instagram" data-aos="zoom-in">
-            <h3>Instagram</h3>
-            <a
-              href="https://insta-eta-ten.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={Instargram} alt="" />
-            </a>
-            <a href="https://github.com/hamid815/insta">
-              <i class="bx bxl-github"></i>
-            </a>
-            <a
-              href="https://insta-eta-ten.vercel.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="bx bxl-netlify"></i>
-            </a>
-          </div> */}
-            <div className="myPortfolio" data-aos="zoom-in">
+            <div className="NiceAdmin" data-aos="zoom-in">
               <h3>NiceAdmin</h3>
               <a
                 href="https://niceadmin-project.vercel.app/"
@@ -228,15 +171,9 @@ const Skills = ({ skillsState }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="bx bxl-github"></i>
+                <i className="bx bxl-github"></i>
               </a>
-              <a
-                href="https://niceadmin-project.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="bx bxl-netlify"></i>
-              </a>
+             
             </div>
           </div>
         )}
