@@ -145,7 +145,7 @@ const Skills = ({ skillsState }) => {
             <div className="Game" data-aos="zoom-in">
               <h3>Game</h3>
               <a
-                href="https://vercel.com/hamids-projects-6499ec0d/game-rl5t"
+                href="https://game-rl5t.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
