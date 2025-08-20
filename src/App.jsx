@@ -7,7 +7,9 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import "boxicons/css/boxicons.min.css";
-import { style } from "framer-motion/client";
+import { img, style } from "framer-motion/client";
+import Sun from "./assest/sun.png";
+import Moon from "./assest/moon.png";
 
 
 
@@ -113,7 +115,7 @@ function App() {
               </li>
             </ul>
             <button onClick={() => setIsWhiteBackground(!isWhiteBackground)} className="ligh_mode">
-              {isWhiteBackground ? <i class='bx bxs-moon'></i> : <i class='bx bxs-sun' ></i>}
+              {isWhiteBackground ? <img src={Moon} alt="Moon" /> : <img src={Sun} alt="Sun" />}
             </button>
           </div>
         </header>
@@ -145,7 +147,7 @@ function App() {
         </div>
       </div>
       <footer>
-        <h1 onClick={() => scrollToSection(homeRef)}>Hamid</h1>
+        <h1 onClick={() => scrollToSection(homeRef)}>Hamid.</h1>
         <div>
           <a href="https://www.instagram.com/_hamidjon._/">
             <i class='bx bxl-instagram'></i>

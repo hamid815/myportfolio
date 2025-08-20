@@ -116,7 +116,6 @@ const Skills = ({ skillsState }) => {
               <abbr title="Open GitHub Repository"> <i className="bx bxl-github"></i></abbr>
              
             </a>
-           
           </div>
 
           <div className="UzumMarket" data-aos="zoom-in">
