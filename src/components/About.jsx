@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Me from "../assest/me.png";
+import Me from "../assest/me.jpg";
 
 const About = ({ aboutState }) => {
   return (

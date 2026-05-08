@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Me from "../assest/me1.png";
+import Me from "../assest/me1.jpg";
 
 
 

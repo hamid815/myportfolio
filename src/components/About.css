@@ -86,10 +86,7 @@
   cursor: pointer;
   font-weight: 600;
 }
-.cv:hover {
-  background-color: rgb(0, 130, 130);
-  transition: all 0.2s ease-in-out;
-}
+
 
 /* body.darkMode {
   background-color: rgb(250, 252, 255);
@@ -156,6 +153,11 @@
 }
 .darkMode .percentage {
   color: rgb(45, 45, 45);
+}
+.darkMode .cv{
+  color: #fff;
+  background-color: #3288ff;
+
 }
 
 /* Responsive Styling */

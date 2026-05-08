@@ -54,8 +54,8 @@ function App() {
   const [homeState, setHomeState] = useState([
     {
       title: "Hello I'm",
-      name: "Shukurillayev Hamid",
-      role: "Frontend Developer",
+      name: "Shukurillayev Xamidjon",
+      role: "Web Developer",
       description:
         "I started with simple HTML and CSS pages, and over time turned that curiosity into real-world projects using JavaScript and React. I love turning ideas into things people can actually use on the web.",
     },
@@ -65,11 +65,11 @@ function App() {
     {
       title: "About Me",
       description:
-        "After a year of consistent learning and practice, I’ve gained a solid understanding of HTML, CSS, JavaScript, and React. My goal? To become the kind of developer who not only builds — but solves real problems with code.",
+        "After a year of consistent learning and practice, I’ve gained a solid understanding of HTML, CSS, JavaScript and React. My goal? To become the kind of developer who not only builds — but solves real problems with code.",
       socialLinks: {
-        instagram: "@_hamidjon._",
+        instagram: "@xamid_o8",
         facebook: "#hamidjon_shukurillayev",
-        telegram: "@hamidjon815",
+        telegram: "@xamidjon815",
         phone: "+998-77-016-37-84",
       },
     },
@@ -96,7 +96,7 @@ function App() {
       <div className="container">
         <header>
           <div className="header">
-            <h1>Hamid.</h1>
+            <h1>Khamid.</h1>
             <ul className="ull">
               <li className="home" onClick={() => scrollToSection(homeRef)}>
                 Home
@@ -121,10 +121,10 @@ function App() {
         </header>
 
         <div className="navi">
-          <a href="https://www.instagram.com/_hamidjon._/">
+          <a href="https://www.instagram.com/xamid_o8/">
             <i class='bx bxl-instagram'></i>
           </a>
-          <a href="https://t.me/hamidjon815">
+          <a href="https://t.me/xamidjon815">
             <i class='bx bxl-telegram'></i>
           </a>
           <a href="https://www.facebook.com/profile.php?id=61576214425419&locale=ru_RU">
@@ -147,13 +147,13 @@ function App() {
         </div>
       </div>
       <footer>
-        <h1 onClick={() => scrollToSection(homeRef)}>Hamid.</h1>
+        <h1 onClick={() => scrollToSection(homeRef)}>Khamid.</h1>
         <div>
-          <a href="https://www.instagram.com/_hamidjon._/">
+          <a href="https://www.instagram.com/xamid_o8/">
             <i class='bx bxl-instagram'></i>
             Instagram
           </a>
-          <a href="https://t.me/hamidjon815">
+          <a href="https://t.me/xamidjon815">
             <i class='bx bxl-telegram'></i>
             Telegram
           </a>
