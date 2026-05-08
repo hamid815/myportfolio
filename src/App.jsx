@@ -7,7 +7,7 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import "boxicons/css/boxicons.min.css";
-import { img, style } from "framer-motion/client";
+
 import Sun from "./assest/sun.png";
 import Moon from "./assest/moon.png";
 
@@ -30,9 +30,7 @@ function App() {
   // Dark mode
   const [isWhiteBackground, setIsWhiteBackground] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsWhiteBackground(!isWhiteBackground);
-  };
+  
 
   useEffect(() => {
     if (isWhiteBackground) {
@@ -51,7 +49,7 @@ function App() {
   }, []);
 
   //Usestateni ishlatish
-  const [homeState, setHomeState] = useState([
+  const [homeState] = useState([
     {
       title: "Hello I'm",
       name: "Shukurillayev Xamidjon",
@@ -61,7 +59,7 @@ function App() {
     },
   ]);
 
-  const [aboutState, setAboutState] = useState([
+  const [aboutState] = useState([
     {
       title: "About Me",
       description:
@@ -75,7 +73,7 @@ function App() {
     },
   ]);
 
-  const [skillsState, setSkillsState] = useState([
+  const [skillsState] = useState([
     {
       title: "My Skills",
       frontend: "Frontend Developer",
@@ -84,7 +82,7 @@ function App() {
     },
   ]);
 
-  const [contactState, setContactState] = useState([
+  const [contactState] = useState([
     {
       title: "Contact Me",
       description: "Adding Contact",

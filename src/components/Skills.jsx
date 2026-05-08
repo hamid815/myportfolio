@@ -6,7 +6,7 @@ import MyPortfolio from "../assest/NiceAdmin.png";
 import Alexp from "../assest/uzumscr.png";
 import Game from "../assest/game.png";
 import Alexpo from "../assest/Alexp.png";
-import { motion } from "framer-motion";
+
 
 
 const Skills = ({ skillsState }) => {
